@@ -20,4 +20,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("function-based-view/", include("function_based_view.urls")),
     path("generic-api-view/", include("GenericAPIView.urls")),
+    path("concrete-generic-api-view/", include("ConcreteGenericView.urls")),
 ]
