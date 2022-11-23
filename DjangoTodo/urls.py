@@ -19,4 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("crud/", include("function_based_view.urls")),
+    path("generic-api-view/", include("GenericAPIView.urls")),
 ]
