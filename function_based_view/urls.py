@@ -5,10 +5,10 @@ app_name = "function_based_view"
 
 
 urlpatterns =[
-    path('create', create ),
-    path('read/<int:id>', read),
-    path('update/<int:id>',update ),
-    path('delete/<int:id>', delete),
-    path('list',list_ ),
+    path('create/', create ),
+    path('read/<int:id>/', read),
+    path('update/<int:id>/',update ),
+    path('delete/<int:id>/', delete),
+    path('list/',list_ ),
 
 ]
