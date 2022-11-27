@@ -5,6 +5,10 @@ from function_based_view.models import Task
 from GenericAPIView.serializer import TaskModelSerializer
 
 
+class ModelViewSet(viewsets.ModelViewSet):
+    queryset = Task.objects.all()
+    serializer_class = TaskModelSerializer
+
 
 class ViewSet(viewsets.ViewSet):
 
